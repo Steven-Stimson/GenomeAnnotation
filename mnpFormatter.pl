@@ -365,9 +365,10 @@ while(<IN>){
 
 
 	## Formatting
-
-	$block = BlockFormatter($block, $suffix, $Verbose);
+	
 	$paf = PafFormatter($paf, $PAF);
+	$block = BlockFormatter($block, $suffix, $Verbose);
+	
 	print($paf);
 	print($block);
 
