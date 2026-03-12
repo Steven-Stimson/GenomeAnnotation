@@ -326,17 +326,6 @@ if(@ARGV){
 }
 
 
-#my $mnpgff = shift;
-#if($mnpgff=~/\.gz$/){
-#	open IN,"<::gzip",$mnpgff;
-#}
-#else{
-#	open IN,$mnpgff;
-#}
-
-
-
-
 
 $/="##";<IN>;$/="\n";
 while(<IN>){
