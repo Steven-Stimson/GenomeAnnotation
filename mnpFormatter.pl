@@ -181,11 +181,11 @@ my %Filter = (
 
 sub filter_by_Rank{
 	my $block = shift;
-	my $minRank = shift;
+	my $maxRank = shift;
 
 	my @info = split(/\n/,$block);
 	my $Rank = $1 if $info[0] =~ /Rank=(\d+)/;
-	($Rank > $minRank) ? return 1 : return 0 ;
+	($Rank > $maxRank) ? return 1 : return 0 ;
 }
 
 sub filter_by_Identity{
