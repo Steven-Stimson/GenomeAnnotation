@@ -307,7 +307,7 @@ sub BlockFormatter{
 
 	if($Verbose == 0){
 		my @lines = split(/\n/, $block);
-		@lines = map {$_ = (split(/;/, $_))[0]} @lines;
+		@lines = map {$_ = (split(/;/, $_))[0].";"} @lines;
 		$block = join("\n", @lines)."\n";
 	}
 
