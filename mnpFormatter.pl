@@ -317,7 +317,6 @@ sub miniprotFormatter{
 
 ## While loopping gff file
 
-#@ARGV || die "perl $0 <gff output by miniprot>\n";
 
 if(@ARGV){
 	($ARGV[0]=~/\.gz$/) ? (open IN,"<::gzip",$ARGV[0]) : (open IN,$ARGV[0]) ;
